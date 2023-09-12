@@ -12,7 +12,7 @@ export default function Home() {
     e.preventDefault();
     const codeBox = document.getElementById('code-box');
     if (codeBox) {
-      fetch(`http://54.164.202.72:3000/?prompt=${textInput}`)
+      fetch(`http://127.0.0.1:4000/?prompt=${textInput}`)
       .then((response) => response.text())
       .then((data) => {
         codeBox.textContent = data;
